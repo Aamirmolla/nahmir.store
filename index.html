@@ -2,67 +2,127 @@
 <html>
 <head>
 <title>Nahmir Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+
 body{
 font-family: Arial;
-background:#0f0f0f;
+background:#0f172a;
 color:white;
+margin:0;
+}
+
+header{
+background:#020617;
+padding:20px;
 text-align:center;
+font-size:28px;
+font-weight:bold;
 }
 
 .container{
-width:80%;
-margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+padding:20px;
 }
 
-.product{
-background:#1c1c1c;
+.card{
+background:#1e293b;
+width:260px;
+margin:15px;
 padding:20px;
-margin:20px;
-border-radius:10px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.price{
+color:#22c55e;
+font-size:20px;
+margin:10px 0;
 }
 
 button{
-background:#00ff88;
+background:#22c55e;
 border:none;
-padding:10px 20px;
+padding:10px 18px;
+border-radius:6px;
+color:white;
 cursor:pointer;
 }
+
+button:hover{
+background:#16a34a;
+}
+
+.payment{
+text-align:center;
+padding:30px;
+background:#020617;
+}
+
+footer{
+text-align:center;
+padding:15px;
+background:#020617;
+}
+
 </style>
 </head>
 
 <body>
 
-<h1>🔥 Nahmir Store</h1>
-<p>Cheap Digital Services</p>
+<header>
+🔥 Nahmir Store
+</header>
 
 <div class="container">
 
-<div class="product">
-<h2>ChatGPT Plus</h2>
-<p>Price: ₹99</p>
-<a href="https://wa.me/yourwhatsapp">
-<button>Buy Now</button>
-</a>
+<div class="card">
+<h3>Spotify Lifetime</h3>
+<p class="price">₹800</p>
+<p>1 Year Warranty</p>
+<button onclick="window.location.href='https://t.me/nahmirstore'">Order</button>
 </div>
 
-<div class="product">
-<h2>Spotify Lifetime</h2>
-<p>Price: ₹800</p>
-<a href="https://wa.me/yourwhatsapp">
-<button>Buy Now</button>
-</a>
+<div class="card">
+<h3>Gemini AI Pro</h3>
+<p class="price">₹399</p>
+<p>12 Months Access</p>
+<button onclick="window.location.href='https://t.me/nahmirstore'">Order</button>
 </div>
 
-<div class="product">
-<h2>Gemini AI Pro</h2>
-<p>Price: ₹399</p>
-<a href="https://wa.me/yourwhatsapp">
-<button>Buy Now</button>
-</a>
+<div class="card">
+<h3>Amazon Prime</h3>
+<p class="price">₹130</p>
+<p>Full Prime Benefits</p>
+<button onclick="window.location.href='https://t.me/nahmirstore'">Order</button>
+</div>
+
+<div class="card">
+<h3>Microsoft 365</h3>
+<p class="price">₹299</p>
+<p>1 Year Subscription</p>
+<button onclick="window.location.href='https://t.me/nahmirstore'">Order</button>
 </div>
 
 </div>
+
+<div class="payment">
+<h2>Payment Methods</h2>
+<p>UPI • Crypto • Bank Transfer</p>
+<p>Instant Activation within 15 Minutes</p>
+</div>
+
+<footer>
+Support: Telegram @nahmirstore
+</footer>
 
 </body>
 </html>
